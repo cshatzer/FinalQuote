@@ -97,6 +97,9 @@
                 doc.text("Signature: ________________________", 20, 180);
                 doc.save("quote.pdf");
             };
+            img.onerror = function () {
+                alert("Error loading logo image. Please check the file path.");
+            };
         }
     </script>
 </head>
@@ -117,3 +120,4 @@
     </div>
 </body>
 </html>
+
